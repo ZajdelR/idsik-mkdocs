@@ -1,0 +1,20 @@
+site_name: Satellite Telemetry
+theme:
+  name: mkdocs
+  locale: pl
+nav:
+  - Start: index.md
+  - Samouczek: tutorials/pierwsza-analiza.md
+  - Instrukcja: how-to/wysokosci-z-csv.md
+  - Referencja API: reference/api.md
+  - Wyjaśnienie: explanation/srednia-a-probkowanie.md
+plugins:
+  - search:
+      lang: en
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            docstring_style: google
+            show_source: false
